@@ -25,7 +25,7 @@
   --color-heading: #222;
   --hero-overlay-color: #000000;
   --menu-color: #ffffff;
-  --theme-color: #ae5cff;
+  --theme-color: #5708b2;
   --border-color: #e2e2e2;
   --theme-color-dark: #f8f8f8;
   --text-color: #3a3a3a;
@@ -1110,7 +1110,7 @@ section {background: var(--light-color);}
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, rgba(0, 83, 131, 0.4) 52%);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -1134,10 +1134,10 @@ section {background: var(--light-color);}
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border: 5px solid rgba(0, 92, 131, 0.7);
   top: -15%;
   left: -15%;
-  background: rgba(198, 16, 0, 0);
+  background: rgba(40, 0, 198, 0);
 }
 
 .call-to-action:before {
@@ -1241,18 +1241,18 @@ section {background: var(--light-color);}
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
-  background: linear-gradient(135deg, #ff758c, #ff5858);
+  background: linear-gradient(135deg, #8c75ff, #7c58ff);
   border: none;
   border-radius: 30px;
   text-decoration: none;
-  box-shadow: 0px 8px 20px rgba(255, 88, 88, 0.5);
+  box-shadow: 0px 8px 20px rgba(99, 88, 255, 0.5);
   transition: all 0.3s ease-in-out;
 }
 
 .call-to-action .cta-btn:hover {
-  background: linear-gradient(135deg, #ff5858, #ff758c);
+  background: linear-gradient(135deg, #7958ff, #9575ff);
   transform: translateY(-5px);
-  box-shadow: 0px 12px 30px rgba(255, 88, 88, 0.7);
+  box-shadow: 0px 12px 30px rgba(163, 88, 255, 0.7);
 }
 
 /* Responsive Design */
@@ -1460,7 +1460,7 @@ section {background: var(--light-color);}
 
 /* Section Background Gradient */
 .section-gradient {
-  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff5858);
+  background: linear-gradient(135deg, #a77eff, #9875ff, #7c58ff);
   padding: 100px 0;
 }
 
@@ -1555,12 +1555,12 @@ section {background: var(--light-color);}
   display: inline-block;
   margin: 0 10px;
   font-size: 1rem;
-  color: #ff7eb3;
+  color: #9c7eff;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .team-member .member-info .social-links a:hover {
-  color: #ff5858;
+  color: #ae58ff;
   transform: scale(1.2);
 }
 
@@ -1569,7 +1569,7 @@ section {background: var(--light-color);}
   position: absolute;
   top: -20px;
   right: -20px;
-  background: #ff7eb3;
+  background: #ab7eff;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1582,7 +1582,7 @@ section {background: var(--light-color);}
   top: auto;
   bottom: -20px;
   left: -20px;
-  background: #ff758c;
+  background: #9575ff;
 }
 
 /* Responsive Design */
@@ -1727,7 +1727,7 @@ section {background: var(--light-color);}
 }
 
 .accordion .accordion-button .icon {
-  background: linear-gradient(135deg, #ff758c, #ff5858);
+  background: linear-gradient(135deg, #af75ff, #8d58ff);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -1864,7 +1864,7 @@ section {background: var(--light-color);}
 }
 
 .recent-posts .post-category {
-  background-color: #ff758c;
+  background-color: #ac75ff;
   color: #fff;
   display: inline-block;
   padding: 8px 15px;
@@ -3066,7 +3066,7 @@ dl, ol, ul {
 
 .stats-counter {
   padding: 100px 0;
-  background: linear-gradient(120deg, #f9f9f9, #e8f0fe);
+  background: linear-gradient(120deg, #f9f9f90b, #e8f0fe);
   position: relative;
   overflow: hidden;
 }
@@ -3093,7 +3093,7 @@ dl, ol, ul {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(45deg, rgba(255, 0, 150, 0.3), rgba(0, 204, 255, 0.3));
+  background: linear-gradient(45deg, rgba(204, 0, 255, 0.3), rgba(0, 204, 255, 0.3));
   transform: rotate(45deg);
   z-index: 1;
   opacity: 0;
@@ -3113,7 +3113,7 @@ dl, ol, ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5c70);
+  background: linear-gradient(45deg, #b47eff, #b375ff, #955cff);
   border-radius: 50%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -3169,14 +3169,14 @@ dl, ol, ul {
   line-height: 1;
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
-  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5c70);
+  background: linear-gradient(45deg, #c57eff, #aa75ff, #9b5cff);
 }
 
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
   color: var(--text-white-black);
   transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(255, 94, 140, 0.3);
+  box-shadow: 0 4px 10px rgba(150, 94, 255, 0.3);
 }
 
 .portfolio .portfolio-flters li:first-child {
@@ -4333,19 +4333,19 @@ dl, ol, ul {
   margin: 0;
 }
 .contact-form button[type=submit]{
-  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5c70);
+  background: linear-gradient(45deg, #ad7eff, #9575ff, #7c58ff);
   color: #fff;
   padding: 0.7rem 1.8rem;
   border: none;
   border-radius: 50px;
   font-weight: 600;
   text-transform: uppercase;
-  box-shadow: 0 4px 10px rgba(255, 94, 140, 0.3);
+  box-shadow: 0 4px 10px rgba(129, 94, 255, 0.3);
   transition: all 0.4s ease-in-out;
 }
 .contact-form button[type=submit]:hover{
-  background: linear-gradient(45deg, #ff5c70, #ff758c, #ff7eb3);
-  box-shadow: 0 6px 20px rgba(255, 94, 140, 0.5);
+  background: linear-gradient(45deg, #8a5cff, #9575ff, #7c58ff);
+  box-shadow: 0 6px 20px rgba(129, 94, 255, 0.5);
   transform: translateY(-2px);
   color: var(--color-primary);
 }
@@ -4359,7 +4359,7 @@ dl, ol, ul {
 }
 
 .contact-section .form-message.error {
-  background: #ff4d15;
+  background: #8615ff;
   color: #fff;
   padding: 10px 15px;
   border-radius: 3px;
@@ -4743,7 +4743,7 @@ canvas{
 }
 
 .subscribe-form button {
-  background-color: #f5a623;
+  background-color: #3720e4;
   border: none;
   padding: 15px 30px;
   /* border-radius: 30px; */
@@ -4753,7 +4753,7 @@ canvas{
 }
 
 .subscribe-form button:hover {
-  background-color: #e48720;
+  background-color: #3720e4;
 }
 
 .copyright-text {
@@ -4768,7 +4768,7 @@ canvas{
 }
 
 .copyright-text a:hover {
-  color: #f5a623;
+  color: #3823f5;
 }
 
 /* Floating Icons Animation */
