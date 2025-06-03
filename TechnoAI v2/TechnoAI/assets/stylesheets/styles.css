@@ -19,23 +19,23 @@
   --font-secondary:
   'Poppins', sans-serif;
   scroll-behavior: smooth;
-  --color-bg: #ff5c70;
+  --color-bg: #955cff;
   --color-light: #ffffff;
   --color-dark: #222;
   --color-heading: #222;
   --hero-overlay-color: #000000;
   --menu-color: #ffffff;
-  --theme-color: #ff5c70;
+  --theme-color: #ae5cff;
   --border-color: #e2e2e2;
   --theme-color-dark: #f8f8f8;
   --text-color: #3a3a3a;
   --hero-text-color: #ffffff;
   --text-white-color: #ffffff;
   --text-grey-color: #3a3a3a;
-  --text-theme-color: #ff5c70;
+  --text-theme-color: #c35cff;
   --light-color: #ffffff;
   --color-default: #3a3a3a;
-  --color-primary-hover: #ff5c70;
+  --color-primary-hover: #b65cff;
   --color-secondary-hover: #0c6de0;
   --color-primary: #3a3a3a;
   --color-secondary: #424242;
@@ -50,7 +50,7 @@
   --color-bg: #000000;
   --color-light: #000000;
   --color-dark: #ffffff;
-  --color-heading: #ff5c70;
+  --color-heading: #b65cff;
   --hero-overlay-color: #000000;
   --menu-color: #ffffff;
   --theme-color: #000000;
@@ -62,7 +62,7 @@
   --text-grey-color: #565656;
   --text-theme-color: #14929a;
   --light-color: #000000;
-  --color-primary-hover: #ff5c70;
+  --color-primary-hover: #b35cff;
   --color-secondary-hover: #0c6de0;
   --color-default: #000000;
   --color-primary: #000000;
@@ -85,18 +85,18 @@ body.dark {
   --color-bg: #000000;
   --color-light: #000000;
   --color-dark: #ffffff;
-  --color-heading: #ff5c70;
+  --color-heading: #ab5cff;
   --hero-overlay-color: #000000;
   --menu-color: #ffffff;
-  --border-color: #ff5c70;
+  --border-color: #b65cff;
   --theme-color-dark: #151515;
   --text-color: #ffffff;
   --text-white-color: #ffffff;
   --text-grey-color: #565656;
-  --text-theme-color: #ff5c70;
+  --text-theme-color: #bb5cff;
   --light-color: #000000;
-  --color-primary-hover: #ff5c70;
-  --color-secondary-hover: #0c6de0;
+  --color-primary-hover: #bb5cff;
+  --color-secondary-hover: #6b0ce0;
   --color-default: #424242;
   --color-primary: #424242;
   --color-secondary: #424242;
@@ -215,7 +215,7 @@ section {
 
 .section-header p {
   margin-bottom: 0;
-  color: #b8651d;
+  color: #4c1db8;
 }
 
 img {
@@ -324,7 +324,7 @@ img:hover {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5c70);
+  background: linear-gradient(45deg, #c97eff, #a175ff, #9b5cff);
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -2145,8 +2145,8 @@ section {background: var(--light-color);}
 
  /* Hero Banner Buttons */
  #hero .btn-get-started {
-  background: linear-gradient(45deg, #ff5c70, #ff758c, #ff7eb3);
-  box-shadow: 0 6px 20px rgba(255, 94, 140, 0.5);
+  background: linear-gradient(45deg, #825cff, #7a10f4, #a57eff);
+  box-shadow: 0 6px 20px rgba(153, 94, 255, 0.5);
   color: #fff;
   padding: 0.8rem 2rem;
   border: none;
@@ -2160,14 +2160,14 @@ section {background: var(--light-color);}
 }
 
 #hero .btn-get-started:hover {
-  box-shadow: 0 4px 10px rgba(255, 94, 140, 0.3);
+  box-shadow: 0 4px 10px rgba(145, 94, 255, 0.3);
   transform: translateY(-3px);
   color: var(--color-primary);
 }
 
 #hero .btn-get-started:active {
   transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(255, 94, 140, 0.3);
+  box-shadow: 0 4px 10px rgba(148, 94, 255, 0.3);
 }
 
 #hero .btn-get-started::before {
@@ -2302,26 +2302,26 @@ section {background: var(--light-color);}
 
 /* Get Quotes Button */
 .btn-get-started {
-  background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5c70);
+  background: linear-gradient(45deg, #b67eff, #7a10f4, #985cff);
   color: #fff;
   padding: 0.7rem 1.8rem;
   border: none;
   border-radius: 50px;
   font-weight: 600;
   text-transform: uppercase;
-  box-shadow: 0 4px 10px rgba(255, 94, 140, 0.3);
+  box-shadow: 0 4px 10px rgba(145, 94, 255, 0.3);
   transition: all 0.4s ease-in-out;
 }
 
 .btn-get-started:hover {
-  background: linear-gradient(45deg, #ff5c70, #ff758c, #ff7eb3);
-  box-shadow: 0 6px 20px rgba(255, 94, 140, 0.5);
+  background: linear-gradient(45deg, #9d5cff, #ac75ff, #8f7eff);
+  box-shadow: 0 6px 20px rgba(175, 94, 255, 0.5);
   transform: translateY(-2px);
 }
 
 .btn-get-started:active {
   transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(255, 94, 140, 0.3);
+  box-shadow: 0 4px 10px rgba(169, 94, 255, 0.3);
 }
 
 
