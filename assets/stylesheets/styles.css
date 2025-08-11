@@ -4817,3 +4817,84 @@ canvas{
     margin-bottom: 15px;
   }
 }
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.service-selector {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.service-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.service-options .option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.service-options .option:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-services {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.selected-services label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.selected-item {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.selected-item .remove {
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.service-selector.active .service-options {
+  display: block;
+}

@@ -60,7 +60,7 @@
           <li><a href="blogs.html">News</a></li>-->
         </ul>
       </nav><!-- .navbar -->
-      <a href="contact.html" class="btn-get-started hide-on-mobile">Get Quotes</a>
+      <a href="contact.html" class="btn-get-started hide-on-mobile">Contact Us</a>
       <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -102,7 +102,7 @@
             <a href=""><i class="bi bi-instagram"></i></a>
           </div>
           <div class="d-flex justify-content-start">
-            <a href="#contact" class="btn-get-started mr-20" data-aos="fade-up" data-aos-delay="800">Get Quotes	</a>
+            <a href="#contact" class="btn-get-started mr-20" data-aos="fade-up" data-aos-delay="800">Contact Us</a>
             <a href="#services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">Get Started</a>
           </div>
         </div>
@@ -943,6 +943,39 @@
                         <div class="form-group form-input-box">
                           <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
                             required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <!--<div class="col-md-12">
+                        <div class="form-group form-input-box">
+                          <select class="form-control" name="service" required="required" data-error="Please select a service.">
+                            <option value="" selected>Select a Service*</option>
+                            <option value="Graphic & UI/UX Design">Graphic & UI/UX Design</option>
+                            <option value="Web Hosting">Web Hosting</option>
+                            <option value="Mobile Device Management (MDM)">Mobile Device Management (MDM)</option>
+                            <option value="Cloud Hosting">Cloud Hosting</option>
+                            <option value="Data Security">Data Security</option>
+                            <option value="SIEM & Software Deployment">SIEM & Software Deployment</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div> -->
+                      <div class="col-md-12">
+                        <div class="form-group form-input-box">
+                          <div class="service-selector">
+                            <input type="text" id="serviceInput" class="form-control" placeholder="Choose Services*" readonly>
+                            <div class="service-options" id="serviceOptions">
+                              <div class="option" data-value="Graphic & UI/UX Design">Graphic & UI/UX Design</div>
+                              <div class="option" data-value="Web Hosting">Web Hosting</div>
+                              <div class="option" data-value="Mobile Device Management (MDM)">Mobile Device Management (MDM)</div>
+                              <div class="option" data-value="Cloud Hosting">Cloud Hosting</div>
+                              <div class="option" data-value="Data Security">Data Security</div>
+                              <div class="option" data-value="SIEM & Software Deployment">SIEM & Software Deployment</div>
+                            </div>
+                          </div>
+                          <div class="selected-services" id="selectedServices">
+                            <label>Selected Services:</label>
+                          </div>
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
