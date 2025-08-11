@@ -326,3 +326,35 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const serviceInput = document.getElementById('serviceInput');
+  const serviceOptions = document.getElementById('serviceOptions');
+  const selectedServices = document.getElementById('selectedServices');
+  const options = serviceOptions.getElementsByClassName('option');
+
+  serviceInput.addEventListener('click', () => {
+    serviceInput.parentElement.classList.toggle('active');
+  });
+
+  Array.from(options).forEach(option => {
+    option.addEventListener('click', () => {
+      const value = option.getAttribute('data-value');
+      if (!selectedServices.querySelector(`[data-value="${value}"]`)) {
+        const selectedItem = document.createElement('div');
+        selectedItem.className = 'selected-item';
+        selectedItem.setAttribute('data-value', value);
+        selectedItem.innerHTML = `${value} <span class="remove" onclick="this.parentElement.remove()">×</span>`;
+        selectedServices.appendChild(selectedItem);
+        serviceInput.parentElement.classList.remove('active');
+      }
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!serviceInput.contains(e.target) && !serviceOptions.contains(e.target)) {
+      serviceInput.parentElement.classList.remove('active');
+    }
+  });
+});
