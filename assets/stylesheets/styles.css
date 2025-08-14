@@ -4829,72 +4829,84 @@ canvas{
   font-weight: bold;
 }
 
+/* Service Selector (theme-aware) */
 .service-selector {
   position: relative;
 }
 
-.form-control {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #007bff;
-  border-radius: 20px;
-  font-size: 16px;
+.service-selector .form-control {
+  background-color: var(--color-light); /* light in light mode, dark in dark mode */
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding-right: 35px; /* space for arrow */
   cursor: pointer;
-  background-color: #fff;
 }
 
+/* Add dropdown arrow */
+.service-selector .form-control::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: var(--text-color);
+  pointer-events: none;
+}
+
+/* Dropdown menu styling */
 .service-options {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 5px);
   left: 0;
   right: 0;
-  background: #fff;
-  border: 1px solid #007bff;
-  border-radius: 10px;
+  background: var(--color-light); /* light in light mode, dark in dark mode */
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   max-height: 200px;
   overflow-y: auto;
   z-index: 1000;
-}
-
-.service-options .option {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.service-options .option:hover {
-  background-color: #f0f0f0;
-}
-
-.selected-services {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #f9f9f9;
-}
-
-.selected-services label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.selected-item {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 5px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  position: relative;
-}
-
-.selected-item .remove {
-  cursor: pointer;
-  margin-left: 5px;
-  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .service-selector.active .service-options {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-options .option {
+  padding: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.service-options .option:hover {
+  background-color: var(--theme-color-dark);
+}
+
+/* Selected services (theme-aware) */
+.selected-services {
+  background: var(--color-light); /* light in light mode, dark in dark mode */
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.selected-services label {
+  color: var(--text-color);
+}
+
+.selected-item {
+  background-color: gray;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin: 5px;
 }
