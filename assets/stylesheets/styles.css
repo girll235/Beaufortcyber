@@ -3288,6 +3288,7 @@ dl, ol, ul {
 }
 
 
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -3727,6 +3728,7 @@ dl, ol, ul {
 .cross-line {
   text-decoration: line-through;
 }
+
 
 @media (max-width: 768px) {
   .pricing .row {
@@ -4401,7 +4403,27 @@ dl, ol, ul {
   display: none;
 }
 
+.button-area span
+{
+  color: #0D6EFD;
+  margin-left: 10px;
+  display: none;
 
+}
+
+@media (max-width: 600px) {
+  form .button-area {
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+  }
+  .button-area span{
+    text-align: center;
+    margin: 30% ;
+
+  }
+}
 
 
 /*--------------------------------------------------------------

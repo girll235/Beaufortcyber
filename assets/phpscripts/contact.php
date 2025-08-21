@@ -7,7 +7,7 @@
     */
     //this is your Email address
     //kinldy update your email here
-    $to = "info@example.com"; 
+    $to = "binamikasa61@gmail.com"; 
     $from = $_POST['email']; 
     //this is the sender's Email address
     //this is firt name
@@ -20,7 +20,7 @@
     $message = "Message " . $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from . "\r\n" .
-        'Reply-To: webmaster@example.com' . "\r\n" .
+        'Reply-To: sabriine.bt@gmail.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     $headers2 = "From:" . $to;
