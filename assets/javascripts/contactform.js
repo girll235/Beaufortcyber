@@ -1,16 +1,12 @@
 $(function () {
     "use strict";
-    
-    /*  
-        Template name    : Beaufort Cyber - IT Solutions & Business Services Multipurpose Responsive Website Template
-        Author           : ZRTHEMES
-        Version          : 1.0
-        File Description : contact js file of the template
-    */
+
+   
     $('#ajax-contact').validator();
     $('#ajax-contact').on('submit', function (e) {
+
         if (!e.isDefaultPrevented()) {
-            var url = "assets/phpscripts/contact.php";
+            var url = "/Beaufortcyber/assets/phpscripts/message.php";
             $.ajax({
                 type: "POST",
                 url: url,
@@ -25,5 +21,8 @@ $(function () {
             return false;
         }
     })
+
 });
+
+
 

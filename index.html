@@ -51,7 +51,24 @@
               <li><a href="about.html">About</a></li>
               <!-- <li><a href="packages.html">Pricing</a></li> -->
               <li><a href="faqs.html">FAQs</a></li>
-              <li><a href="Terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="Terms.html">Terms &amp; Conditions</a></li>.git
+              .vscode
+              assets
+              .DS_Store
+              about.html
+              blog-details.html
+              blogs.html
+              coming-soon.html
+              contact.html
+              faqs.html
+              index.html
+              packages.html
+              portfolio.html
+              privacy-policy.html
+              services.html
+              team.html
+              Terms.html
+              testimonials.html
               <li><a href="privacy-policy.html">Privacy Policy</a></li>
               <!--<li><a href="blogs.html">Blogs</a></li>
               <li><a href="blog-details.html">Blog Detail Page</a></li>
@@ -762,10 +779,10 @@
                 <h4>Sonie </h4>
                 <span>Human Resources Manager</span>
                 <div class="social-links mt-3">
-                  <a href="#" class="social-icon" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="mailto:helpdesk@beaufortcyber.com" class="social-icon" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                  <a href="https://www.facebook.com/share/1Gac9PLqJC/" class="social-icon" target="_blank"><i class="bi bi-facebook"></i></a>
                   <a href="#" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="#" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/beaufortcyber" class="social-icon" target="_blank"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -984,7 +1001,8 @@
           <div class="col-lg-8 col-md-12" data-aos="fade-left">
             <div class="contact-form-box contact-form contact-form-3">
               <div class="form-container-box">
-                <form class="contact-form form" id="ajax-contact" method="post" action="assets/phpscripts/contact.php" >
+                <!-- method="post" action="assets/phpscripts/contact.php" -->
+                <form class="contact-form form" id="ajax-contact" id="contactForm" method="POST" action="assets/phpscripts/message.php">
                   <div class="controls">
                     <div class="row">
                       <div class="col-md-6">
@@ -1015,10 +1033,10 @@
                           <div class="help-block with-errors"></div>
                         </div>
                       </div> -->
-                      <div class="col-md-12">
+                      <!-- <div class="col-md-12">
                         <div class="form-group form-input-box">
                           <div class="service-selector">
-                            <input type="text" id="serviceInput" class="form-control" placeholder="Choose Services*" readonly>
+                            <input type="text" id="serviceInput" class="form-control" placeholder="Choose Services" readonly>
                             <div class="service-options" id="serviceOptions">
                               <div class="option" data-value="Graphic & UI/UX Design">Graphic & UI/UX Design</div>
                               <div class="option" data-value="Web Hosting">Web Hosting</div>
@@ -1028,12 +1046,32 @@
                               <div class="option" data-value="SIEM & Software Deployment">SIEM & Software Deployment</div>
                             </div>
                           </div>
-                          <div class="selected-services" id="selectedServices">
+                          <div class="selected-services" id="selectedServices" name="selectedServices">
                             <label>Selected Services:</label>
                           </div>
                           <div class="help-block with-errors"></div>
                         </div>
+                      </div> -->
+                      <!-- <input type="hidden" name="services" id="servicesInput"> -->
+
+                      <div class="col-md-12">
+                        <div class="form-group form-input-box">
+                          <select class="fs-select form-control" name="service" id="support-type" name="support-type"form-group form-input-box  required required="required" data-error="Please select a service.">
+                            <option value="" selected>Select a Service*</option>
+                            <option value="Graphic & UI/UX Design">Graphic & UI/UX Design</option>
+                            <option value="Web Hosting">Web Hosting</option>
+                            <option value="Mobile Device Management (MDM)">Mobile Device Management (MDM)</option>
+                            <option value="Cloud Hosting">Cloud Hosting</option>
+                            <option value="Data Security">Data Security</option>
+                            <option value="SIEM & Software Deployment">SIEM & Software Deployment</option>
+                            <option value="Troubleshooting">Troubleshooting</option>
+                            <option value="Help Desk Support">Help Desk Support</option>
+                            <option value="Data Recovery">Data Recovery</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                        </div>
                       </div>
+
                       <div class="col-md-12">
                         <div class="form-group form-input-box">
                           <input type="text" class="form-control" name="subject" placeholder="Subject"
@@ -1193,6 +1231,7 @@
   <script src="assets/javascripts/particles.min.js"></script>
   <script src="assets/javascripts/script.js"></script>
   <script src="assets/javascripts/contactus.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/javascripts/main.js"></script>
